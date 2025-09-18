@@ -1,0 +1,1659 @@
+/* Better Canvas - Content Styles */
+
+/* Dark Mode Styles */
+.better-canvas-dark {
+    /* Main Canvas App */
+    --ic-brand-primary: #4a90e2 !important;
+    --ic-brand-button--primary-bgd: #4a90e2 !important;
+    --ic-brand-button--primary-text: #ffffff !important;
+    --ic-brand-font-color-dark: #ffffff !important;
+    --ic-brand-font-color-primary: #ffffff !important;
+}
+
+.better-canvas-dark .ic-app {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ic-app-main-content {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ic-app-main-content__primary {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Header and Navigation */
+.better-canvas-dark .ic-app-header {
+    background-color: #2d2d2d !important;
+    border: none !important;
+}
+
+.better-canvas-dark .ic-app-header__main-navigation {
+    background-color: #2d2d2d !important;
+    border: none !important;
+}
+
+/* Remove all borders from navigation items */
+.better-canvas-dark .ic-app-header__menu-list-item {
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* Specific fix for list items that have borders */
+.better-canvas-dark .menu-item,
+.better-canvas-dark .menu-item.ic-app-header__menu-list-item {
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    outline: none !important;
+}
+
+/* Remove borders from menu item containers */
+.better-canvas-dark .menu-item-icon-container,
+.better-canvas-dark .menu-item__text {
+    border: none !important;
+    outline: none !important;
+}
+
+.better-canvas-dark .ic-app-header__menu-list-link {
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* Remove borders from the entire sidebar */
+.better-canvas-dark .ic-app-header__main-navigation,
+.better-canvas-dark .ic-app-header__main-navigation * {
+    border: none !important;
+    outline: none !important;
+}
+
+.better-canvas-dark .ic-app-header__menu-list-link {
+    color: #e0e0e0 !important;
+    background-color: transparent !important;
+}
+
+.better-canvas-dark .ic-app-header__menu-list-link:hover {
+    background-color: #404040 !important;
+    color: #ffffff !important;
+}
+
+.better-canvas-dark .ic-app-header__menu-list-link--active {
+    background-color: #404040 !important;
+    color: #ffffff !important;
+}
+
+/* Fix unwanted highlighting on navigation items */
+.better-canvas-dark .ic-app-header__menu-list-item {
+    background-color: transparent !important;
+}
+
+.better-canvas-dark .ic-app-header__menu-list-item:hover {
+    background-color: transparent !important;
+}
+
+.better-canvas-dark .ic-app-header__menu-list-item--active {
+    background-color: transparent !important;
+}
+
+/* FORCE ALL NAVIGATION ITEMS TO HAVE CONSISTENT BACKGROUND */
+.better-canvas-dark .ic-app-header__menu-list-item:not(.ic-app-header__menu-list-item--active) {
+    background-color: transparent !important;
+}
+
+.better-canvas-dark .ic-app-header__menu-list-item:not(.ic-app-header__menu-list-item--active) .ic-app-header__menu-list-link {
+    background-color: transparent !important;
+}
+
+/* Override any inline styles that might be setting different backgrounds */
+.better-canvas-dark .ic-app-header__menu-list-item[style*="background"],
+.better-canvas-dark .ic-app-header__menu-list-link[style*="background"] {
+    background-color: transparent !important;
+}
+
+/* Force consistent background for all unselected items */
+.better-canvas-dark .ic-app-header__menu-list-item:not([class*="active"]):not([class*="selected"]) {
+    background-color: transparent !important;
+}
+
+.better-canvas-dark .ic-app-header__menu-list-item:not([class*="active"]):not([class*="selected"]) .ic-app-header__menu-list-link {
+    background-color: transparent !important;
+}
+
+/* Remove green text colors and make everything white */
+.better-canvas-dark .ic-app-header__menu-list-link--active,
+.better-canvas-dark .ic-app-header__menu-list-item--active .ic-app-header__menu-list-link {
+    color: #ffffff !important;
+}
+
+/* Proper styling for selected/active navigation items */
+.better-canvas-dark .ic-app-header__menu-list-item--active,
+.better-canvas-dark .ic-app-header__menu-list-item--active .ic-app-header__menu-list-link {
+    background-color: #404040 !important;
+    color: #ffffff !important;
+}
+
+/* Force white text and icons for all selected items */
+.better-canvas-dark .ic-app-header__menu-list-item--active *,
+.better-canvas-dark .ic-app-header__menu-list-item--active .ic-app-header__menu-list-link *,
+.better-canvas-dark .ic-app-header__menu-list-item--active .menu-item__text,
+.better-canvas-dark .ic-app-header__menu-list-item--active .ic-icon-svg,
+.better-canvas-dark .ic-app-header__menu-list-item--active svg {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+}
+
+/* Override any green colors for selected items */
+.better-canvas-dark .ic-app-header__menu-list-item--active .ic-app-header__menu-list-link,
+.better-canvas-dark .ic-app-header__menu-list-item--active .ic-app-header__menu-list-link * {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+}
+
+/* Specific fix for Dashboard when selected */
+.better-canvas-dark #global_nav_dashboard_link,
+.better-canvas-dark #global_nav_dashboard_link *,
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link).ic-app-header__menu-list-item--active,
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link).ic-app-header__menu-list-item--active * {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    background-color: #404040 !important;
+}
+
+/* Handle any other active states */
+.better-canvas-dark .ic-app-header__menu-list-item[class*="active"],
+.better-canvas-dark .ic-app-header__menu-list-item[class*="selected"],
+.better-canvas-dark .ic-app-header__menu-list-item[class*="current"] {
+    background-color: #404040 !important;
+}
+
+.better-canvas-dark .ic-app-header__menu-list-item[class*="active"] *,
+.better-canvas-dark .ic-app-header__menu-list-item[class*="selected"] *,
+.better-canvas-dark .ic-app-header__menu-list-item[class*="current"] * {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+}
+
+/* Make the selected background more distinct */
+.better-canvas-dark .ic-app-header__menu-list-item--active,
+.better-canvas-dark .ic-app-header__menu-list-item--active .ic-app-header__menu-list-link {
+    background-color: #4a4a4a !important;
+    border-radius: 4px !important;
+}
+
+/* Fix any green text in navigation */
+.better-canvas-dark .ic-app-header__menu-list-link[style*="color: green"],
+.better-canvas-dark .ic-app-header__menu-list-link[style*="color: #"],
+.better-canvas-dark .ic-app-header__menu-list-item[style*="color: green"],
+.better-canvas-dark .ic-app-header__menu-list-item[style*="color: #"] {
+    color: #ffffff !important;
+}
+
+/* SPECIFIC FIX FOR DASHBOARD ITEM */
+.better-canvas-dark #global_nav_dashboard_link,
+.better-canvas-dark #global_nav_dashboard_link .ic-app-header__menu-list-link {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+/* Force Dashboard to look like other unselected items */
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link):not(.ic-app-header__menu-list-item--active) {
+    background-color: transparent !important;
+}
+
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link):not(.ic-app-header__menu-list-item--active) .ic-app-header__menu-list-link {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+/* NUCLEAR OPTION: Force Dashboard to be unselected when not on dashboard page */
+.better-canvas-dark #global_nav_dashboard_link:not(.ic-app-header__menu-list-link--active),
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link):not(.ic-app-header__menu-list-item--active) {
+    background-color: transparent !important;
+}
+
+.better-canvas-dark #global_nav_dashboard_link:not(.ic-app-header__menu-list-link--active) *,
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link):not(.ic-app-header__menu-list-item--active) * {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    fill: #ffffff !important;
+}
+
+/* Override any inline styles that might be keeping Dashboard highlighted */
+.better-canvas-dark #global_nav_dashboard_link[style*="background"],
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link)[style*="background"] {
+    background-color: transparent !important;
+}
+
+/* Force Dashboard to be transparent unless it's the actual active page */
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link) {
+    background-color: transparent !important;
+}
+
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link) .ic-app-header__menu-list-link {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+/* Universal override for any navigation item background inconsistencies */
+.better-canvas-dark .ic-app-header__menu-list-item:not(.ic-app-header__menu-list-item--active) * {
+    background-color: transparent !important;
+}
+
+/* COMPLETE DASHBOARD HIGHLIGHT REMOVAL */
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link),
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link) *,
+.better-canvas-dark #global_nav_dashboard_link,
+.better-canvas-dark #global_nav_dashboard_link * {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* Override any possible Dashboard active states */
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link).ic-app-header__menu-list-item--active,
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link).ic-app-header__menu-list-item--active *,
+.better-canvas-dark #global_nav_dashboard_link.ic-app-header__menu-list-link--active,
+.better-canvas-dark #global_nav_dashboard_link.ic-app-header__menu-list-link--active * {
+    background-color: transparent !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    fill: #ffffff !important;
+}
+
+/* Force Dashboard to always look unselected */
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link) {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.better-canvas-dark .ic-app-header__menu-list-item:has(#global_nav_dashboard_link) .ic-app-header__menu-list-link {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+/* Sidebar */
+.better-canvas-dark .ic-app-main-content__secondary {
+    background-color: #2d2d2d !important;
+    border: none !important;
+}
+
+/* Remove all borders from sidebar elements */
+.better-canvas-dark .ic-app-main-content__secondary * {
+    border: none !important;
+    outline: none !important;
+}
+
+/* Remove borders from the main app container */
+.better-canvas-dark .ic-app {
+    border: none !important;
+}
+
+.better-canvas-dark .ic-app * {
+    border: none !important;
+    outline: none !important;
+}
+
+/* Remove any remaining borders from navigation */
+.better-canvas-dark .ic-app-header,
+.better-canvas-dark .ic-app-header * {
+    border: none !important;
+    outline: none !important;
+}
+
+/* Specific fix for History and other list items */
+.better-canvas-dark #global_nav_history_link,
+.better-canvas-dark #global_nav_history_link *,
+.better-canvas-dark li.menu-item,
+.better-canvas-dark li.menu-item * {
+    border: none !important;
+    outline: none !important;
+}
+
+/* Force remove borders from any list items in navigation */
+.better-canvas-dark .ic-app-header ul li,
+.better-canvas-dark .ic-app-header ol li {
+    border: none !important;
+    outline: none !important;
+    list-style: none !important;
+}
+
+/* Remove any pseudo-element borders */
+.better-canvas-dark .ic-app-header__menu-list-item::before,
+.better-canvas-dark .ic-app-header__menu-list-item::after,
+.better-canvas-dark .menu-item::before,
+.better-canvas-dark .menu-item::after {
+    border: none !important;
+    outline: none !important;
+    display: none !important;
+}
+
+.better-canvas-dark .ic-sidebar-logo {
+    background-color: #2d2d2d !important;
+}
+
+.better-canvas-dark .ic-sidebar-logo__image {
+    filter: brightness(0.8) !important;
+}
+
+/* Dashboard Cards */
+.better-canvas-dark .ic-DashboardCard {
+    background-color: transparent !important;
+    border: 1px solid #404040 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Remove the background behind the course cards container */
+.better-canvas-dark .ic-DashboardCard__header,
+.better-canvas-dark .ic-DashboardCard__header::before,
+.better-canvas-dark .ic-DashboardCard__header::after,
+.better-canvas-dark .ic-DashboardCard__body,
+.better-canvas-dark .ic-DashboardCard__body::before,
+.better-canvas-dark .ic-DashboardCard__body::after {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* Remove background from dashboard main content area */
+.better-canvas-dark .ic-app-main-content,
+.better-canvas-dark .ic-app-main-content__primary,
+.better-canvas-dark .ic-app-main-content__primary::before,
+.better-canvas-dark .ic-app-main-content__primary::after {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* Remove background from dashboard container */
+.better-canvas-dark .dashboard,
+.better-canvas-dark .dashboard::before,
+.better-canvas-dark .dashboard::after,
+.better-canvas-dark .dashboard-container,
+.better-canvas-dark .dashboard-container::before,
+.better-canvas-dark .dashboard-container::after {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+.better-canvas-dark .ic-DashboardCard__header {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ic-DashboardCard__header_image {
+    filter: brightness(0.8) !important;
+}
+
+.better-canvas-dark .ic-DashboardCard__header__name {
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ic-DashboardCard__header__subtitle {
+    color: #b0b0b0 !important;
+}
+
+.better-canvas-dark .ic-DashboardCard__content {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ic-DashboardCard__content__title {
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ic-DashboardCard__content__subtitle {
+    color: #b0b0b0 !important;
+}
+
+/* Course Cards - More specific targeting */
+.better-canvas-dark .ic-DashboardCard__box {
+    background-color: transparent !important;
+}
+
+.better-canvas-dark .ic-DashboardCard__box__container {
+    background-color: transparent !important;
+}
+
+.better-canvas-dark .ic-DashboardCard__box__header {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+}
+
+/* Course card content areas */
+.better-canvas-dark .ic-DashboardCard .ic-DashboardCard__header__name,
+.better-canvas-dark .ic-DashboardCard .ic-DashboardCard__header__subtitle,
+.better-canvas-dark .ic-DashboardCard .ic-DashboardCard__content__title,
+.better-canvas-dark .ic-DashboardCard .ic-DashboardCard__content__subtitle {
+    color: #e0e0e0 !important;
+}
+
+/* Course card icons */
+.better-canvas-dark .ic-DashboardCard .ic-icon {
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ic-DashboardCard .ic-icon--dashboard {
+    color: #e0e0e0 !important;
+}
+
+/* Course Content */
+.better-canvas-dark .ic-app-main-content__primary {
+    background-color: #1a1a1a !important;
+}
+
+.better-canvas-dark .ic-app-main-content__primary h1,
+.better-canvas-dark .ic-app-main-content__primary h2,
+.better-canvas-dark .ic-app-main-content__primary h3,
+.better-canvas-dark .ic-app-main-content__primary h4,
+.better-canvas-dark .ic-app-main-content__primary h5,
+.better-canvas-dark .ic-app-main-content__primary h6 {
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ic-app-main-content__primary p {
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ic-app-main-content__primary a {
+    color: #4a90e2 !important;
+}
+
+.better-canvas-dark .ic-app-main-content__primary a:hover {
+    color: #6bb6ff !important;
+}
+
+/* Forms and Inputs */
+.better-canvas-dark input[type="text"],
+.better-canvas-dark input[type="email"],
+.better-canvas-dark input[type="password"],
+.better-canvas-dark input[type="search"],
+.better-canvas-dark textarea,
+.better-canvas-dark select {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+.better-canvas-dark input[type="text"]:focus,
+.better-canvas-dark input[type="email"]:focus,
+.better-canvas-dark input[type="password"]:focus,
+.better-canvas-dark input[type="search"]:focus,
+.better-canvas-dark textarea:focus,
+.better-canvas-dark select:focus {
+    border-color: #4a90e2 !important;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2) !important;
+}
+
+/* Buttons */
+.better-canvas-dark .Button {
+    background-color: #4a90e2 !important;
+    color: #ffffff !important;
+    border: 1px solid #4a90e2 !important;
+}
+
+.better-canvas-dark .Button:hover {
+    background-color: #6bb6ff !important;
+    border-color: #6bb6ff !important;
+}
+
+.better-canvas-dark .Button--primary {
+    background-color: #4a90e2 !important;
+    color: #ffffff !important;
+}
+
+.better-canvas-dark .Button--secondary {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+.better-canvas-dark .Button--secondary:hover {
+    background-color: #404040 !important;
+}
+
+/* Tables */
+.better-canvas-dark table {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark th {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+.better-canvas-dark td {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+.better-canvas-dark tr:nth-child(even) td {
+    background-color: #333333 !important;
+}
+
+/* File Preview Areas */
+.better-canvas-dark .file-preview {
+    background-color: #2d2d2d !important;
+    border: 1px solid #404040 !important;
+}
+
+.better-canvas-dark .file-viewer {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .document-viewer {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* Footer */
+.better-canvas-dark .ic-app-footer {
+    background-color: #2d2d2d !important;
+    color: #b0b0b0 !important;
+    border-top: 1px solid #404040 !important;
+}
+
+.better-canvas-dark .ic-app-footer a {
+    color: #4a90e2 !important;
+}
+
+/* To Do Section */
+.better-canvas-dark .todo-list {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .todo-list__item {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-bottom: 1px solid #404040 !important;
+}
+
+.better-canvas-dark .todo-list__item__title {
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .todo-list__item__meta {
+    color: #b0b0b0 !important;
+}
+
+/* To Do dismiss buttons */
+.better-canvas-dark .todo-list__item__dismiss {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+.better-canvas-dark .todo-list__item__dismiss:hover {
+    background-color: #555555 !important;
+}
+
+/* Floating Action Buttons */
+.better-canvas-dark .floating-action-button {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+.better-canvas-dark .floating-action-button:hover {
+    background-color: #555555 !important;
+}
+
+/* Canvas floating buttons */
+.better-canvas-dark .Button--icon-action {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+.better-canvas-dark .Button--icon-action:hover {
+    background-color: #555555 !important;
+}
+
+/* Right sidebar content */
+.better-canvas-dark .ic-app-main-content__secondary {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ic-app-main-content__secondary h2,
+.better-canvas-dark .ic-app-main-content__secondary h3 {
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ic-app-main-content__secondary a {
+    color: #4a90e2 !important;
+}
+
+.better-canvas-dark .ic-app-main-content__secondary a:hover {
+    color: #6bb6ff !important;
+}
+
+/* List items in sidebar */
+.better-canvas-dark .ic-app-main-content__secondary li {
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ic-app-main-content__secondary .list-item {
+    color: #e0e0e0 !important;
+    border-bottom: 1px solid #404040 !important;
+}
+
+/* Calendar and coming up sections */
+.better-canvas-dark .coming-up {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .coming-up__title {
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .coming-up__item {
+    color: #e0e0e0 !important;
+    border-bottom: 1px solid #404040 !important;
+}
+
+/* Bloat Removal Styles */
+.better-canvas-bloat-hidden .ic-app-header__logomark-container {
+    display: none !important;
+}
+
+/* Hide specific navigation items when bloat removal is enabled */
+.better-canvas-bloat-hidden #global_nav_inbox_link,
+.better-canvas-bloat-hidden #global_nav_history_link,
+.better-canvas-bloat-hidden #global_nav_commons_link,
+.better-canvas-bloat-hidden #global_nav_kaltura_link,
+.better-canvas-bloat-hidden #global_nav_help_link {
+    display: none !important;
+}
+
+/* Hide by parent menu items */
+.better-canvas-bloat-hidden .ic-app-header__menu-list-item:nth-child(5), /* Inbox */
+.better-canvas-bloat-hidden .ic-app-header__menu-list-item:nth-child(6), /* History */
+.better-canvas-bloat-hidden .ic-app-header__menu-list-item:nth-child(7), /* Commons */
+.better-canvas-bloat-hidden .ic-app-header__menu-list-item:nth-child(8), /* Kaltura */
+.better-canvas-bloat-hidden .ic-app-header__menu-list-item:nth-child(9) { /* Help */
+    display: none !important;
+}
+
+.better-canvas-bloat-hidden .ic-sidebar-logo {
+    display: none !important;
+}
+
+/* Hide footer bloat */
+.better-canvas-bloat-hidden .ic-app-footer,
+.better-canvas-bloat-hidden #footer,
+.better-canvas-bloat-hidden .footer,
+.better-canvas-bloat-hidden [class*="footer"],
+.better-canvas-bloat-hidden [id*="footer"] {
+    display: none !important;
+}
+
+/* Hide Instructure branding and links */
+.better-canvas-bloat-hidden [class*="instructure"],
+.better-canvas-bloat-hidden [class*="branding"],
+.better-canvas-bloat-hidden [class*="logo"],
+.better-canvas-bloat-hidden a[href*="privacy"],
+.better-canvas-bloat-hidden a[href*="cookie"],
+.better-canvas-bloat-hidden a[href*="acceptable"],
+.better-canvas-bloat-hidden a[href*="facebook"],
+.better-canvas-bloat-hidden a[href*="x.com"],
+.better-canvas-bloat-hidden a[href*="twitter"] {
+    display: none !important;
+}
+
+/* Hide unwanted course cards */
+.better-canvas-bloat-hidden .ic-DashboardCard[aria-label*="Growing with Canvas"],
+.better-canvas-bloat-hidden .ic-DashboardCard[aria-label*="Student Funding Board"],
+.better-canvas-bloat-hidden .ic-DashboardCard[aria-label*="amahjoor Training Sandbox"] {
+    display: none !important;
+}
+
+/* Hide course cards by title text content */
+.better-canvas-bloat-hidden .ic-DashboardCard__header-title[title*="Growing with Canvas"],
+.better-canvas-bloat-hidden .ic-DashboardCard__header-title[title*="Student Funding Board"],
+.better-canvas-bloat-hidden .ic-DashboardCard__header-title[title*="amahjoor Training Sandbox"] {
+    display: none !important;
+}
+
+/* Hide course cards by parent targeting */
+.better-canvas-bloat-hidden .ic-DashboardCard:has(.ic-DashboardCard__header-title[title*="Growing with Canvas"]),
+.better-canvas-bloat-hidden .ic-DashboardCard:has(.ic-DashboardCard__header-title[title*="Student Funding Board"]),
+.better-canvas-bloat-hidden .ic-DashboardCard:has(.ic-DashboardCard__header-title[title*="amahjoor Training Sandbox"]) {
+    display: none !important;
+}
+
+/* Hide entire unpublished courses section if it only contains unwanted cards */
+.better-canvas-bloat-hidden .ic-DashboardCard__box:has(.ic-DashboardCard[aria-label*="amahjoor Training Sandbox"]):not(:has(.ic-DashboardCard:not([aria-label*="amahjoor Training Sandbox"]))) {
+    display: none !important;
+}
+
+/* Hide floating accessibility and help buttons */
+.better-canvas-bloat-hidden #panoramaAccessibilityFloatButton,
+.better-canvas-bloat-hidden #eesy-tab-custom-inner,
+.better-canvas-bloat-hidden [id*="panoramaAccessibility"],
+.better-canvas-bloat-hidden [id*="eesy-tab"],
+.better-canvas-bloat-hidden [class*="eesy-tab"],
+.better-canvas-bloat-hidden [data-eesy-role] {
+    display: none !important;
+}
+
+/* Hide the three dots dashboard options menu */
+.better-canvas-bloat-hidden #DashboardOptionsMenu_Container,
+.better-canvas-bloat-hidden #dashboard-planner-header,
+.better-canvas-bloat-hidden #dashboard-planner-header-aux,
+.better-canvas-bloat-hidden [data-testid="dashboard-options-button"],
+.better-canvas-bloat-hidden .css-1ihz85b-position,
+.better-canvas-bloat-hidden .css-16epeo5-view--inlineBlock-baseButton {
+    display: none !important;
+}
+
+/* Hide course card bloat elements */
+.better-canvas-bloat-hidden .ic-DashboardCard__header-subtitle,
+.better-canvas-bloat-hidden .ic-DashboardCard__header-term,
+.better-canvas-bloat-hidden .ic-DashboardCard__action-container,
+.better-canvas-bloat-hidden .ic-DashboardCard__action,
+.better-canvas-bloat-hidden .ic-DashboardCard__action-layout,
+.better-canvas-bloat-hidden .ic-DashboardCard__header-button-bg,
+.better-canvas-bloat-hidden .ic-DashboardCard__header-button,
+.better-canvas-bloat-hidden .Button--icon-action-rev,
+.better-canvas-bloat-hidden [class*="css-1ihz85b-position"],
+.better-canvas-bloat-hidden [data-position] {
+    display: none !important;
+}
+
+/* Hide course code and term text specifically */
+.better-canvas-bloat-hidden .ic-DashboardCard__header-subtitle,
+.better-canvas-bloat-hidden .ic-DashboardCard__header-term {
+    display: none !important;
+}
+
+/* Hide all action icons and containers */
+.better-canvas-bloat-hidden .ic-DashboardCard__action-container,
+.better-canvas-bloat-hidden .ic-DashboardCard__action,
+.better-canvas-bloat-hidden .ic-DashboardCard__action-layout,
+.better-canvas-bloat-hidden .ic-DashboardCard__action-badge {
+    display: none !important;
+}
+
+/* Hide course card images */
+.better-canvas-bloat-hidden .ic-DashboardCard__header_image,
+.better-canvas-bloat-hidden .ic-DashboardCard__header_hero,
+.better-canvas-bloat-hidden [style*="background-image"],
+.better-canvas-bloat-hidden [style*="background: url"] {
+    display: none !important;
+    background: none !important;
+    background-image: none !important;
+}
+
+/* Hide subtitle and term elements in bloat mode */
+.better-canvas-bloat-hidden .ic-DashboardCard__header-subtitle,
+.better-canvas-bloat-hidden .ic-DashboardCard__header-term {
+    display: none !important;
+}
+
+/* Transform course cards into shadcn-style buttons */
+.better-canvas-bloat-hidden .ic-DashboardCard {
+    background: hsl(0 0% 3.9%) !important;
+    border: 1px solid hsl(0 0% 14.9%) !important;
+    border-radius: 8px !important;
+    padding: 16px 20px !important;
+    margin: 0 !important;
+    min-height: 60px !important;
+    height: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 400px !important;
+    flex: 0 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05) !important;
+    position: relative !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    box-sizing: border-box !important;
+}
+
+/* Hover effects for shadcn-style buttons */
+.better-canvas-bloat-hidden .ic-DashboardCard:hover {
+    background: hsl(0 0% 9%) !important;
+    border-color: hsl(0 0% 20%) !important;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Dark mode hover effects for course cards */
+.better-canvas-dark .ic-DashboardCard:hover,
+.better-canvas-dark .better-canvas-bloat-hidden .ic-DashboardCard:hover {
+    background: hsl(0 0% 20%) !important;
+    border-color: hsl(0 0% 30%) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 0.2) !important;
+}
+
+/* Light mode course card styles */
+.better-canvas-bloat-hidden .ic-DashboardCard {
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    color: #1f2937 !important;
+}
+
+/* Light mode hover effects for course cards */
+.better-canvas-bloat-hidden .ic-DashboardCard:hover {
+    background: #f9fafb !important;
+    border-color: #d1d5db !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
+}
+
+/* Light mode text colors */
+.better-canvas-bloat-hidden .ic-DashboardCard__header-title,
+.better-canvas-bloat-hidden .ic-DashboardCard__header-title span {
+    color: #1f2937 !important;
+}
+
+/* Remove all colors from course cards - make everything black */
+.better-canvas-bloat-hidden .ic-DashboardCard__header-title span,
+.better-canvas-bloat-hidden .ic-DashboardCard__header-title,
+.better-canvas-bloat-hidden .ic-DashboardCard__header_content,
+.better-canvas-bloat-hidden .ic-DashboardCard__header_content *,
+.better-canvas-bloat-hidden .ic-DashboardCard__link,
+.better-canvas-bloat-hidden .ic-DashboardCard__link *,
+.better-canvas-bloat-hidden .ic-DashboardCard__header-title span[style*="color"],
+.better-canvas-bloat-hidden .ic-DashboardCard__header-title span[style*="rgb"],
+.better-canvas-bloat-hidden .ic-DashboardCard__header-title span[style*="red"],
+.better-canvas-bloat-hidden .ic-DashboardCard__header-title span[style*="blue"],
+.better-canvas-bloat-hidden .ic-DashboardCard__header-title span[style*="green"] {
+    color: #000000 !important;
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* Remove any colored backgrounds or elements */
+.better-canvas-bloat-hidden .ic-DashboardCard__header-button-bg,
+.better-canvas-bloat-hidden .ic-DashboardCard__header_hero,
+.better-canvas-bloat-hidden [style*="background-color"],
+.better-canvas-bloat-hidden [style*="background:"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    display: none !important;
+}
+
+/* NUCLEAR OPTION - Override ALL inline color styles */
+.better-canvas-bloat-hidden .ic-DashboardCard *[style*="color"] {
+    color: #000000 !important;
+}
+
+/* Override specific RGB colors */
+.better-canvas-bloat-hidden .ic-DashboardCard *[style*="rgb(212, 30, 0)"],
+.better-canvas-bloat-hidden .ic-DashboardCard *[style*="rgb(23, 123, 99)"],
+.better-canvas-bloat-hidden .ic-DashboardCard *[style*="rgb(50, 74, 77)"],
+.better-canvas-bloat-hidden .ic-DashboardCard *[style*="rgb(98, 110, 123)"] {
+    color: #000000 !important;
+}
+
+/* Active/clicked state */
+.better-canvas-bloat-hidden .ic-DashboardCard:active {
+    transform: translateY(0) !important;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05) !important;
+}
+
+/* Focus state for accessibility */
+.better-canvas-bloat-hidden .ic-DashboardCard:focus {
+    outline: 2px solid hsl(0 0% 100%) !important;
+    outline-offset: 2px !important;
+}
+
+/* Style the course title as clean button text */
+.better-canvas-bloat-hidden .ic-DashboardCard__header-title {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: hsl(0 0% 98%) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    background: none !important;
+    border: none !important;
+    text-decoration: none !important;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+}
+
+/* Remove ellipsis from course titles in bloat mode */
+.better-canvas-bloat-hidden .ic-DashboardCard__header-title.ellipsis {
+    text-overflow: initial !important;
+    white-space: normal !important;
+    overflow: visible !important;
+}
+
+/* Make the entire card clickable */
+.better-canvas-bloat-hidden .ic-DashboardCard__link {
+    display: flex !important;
+    width: 100% !important;
+    height: 100% !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Center the content wrapper */
+.better-canvas-bloat-hidden .ic-DashboardCard__header_content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+/* Container adjustments for the new button layout */
+.better-canvas-bloat-hidden .ic-DashboardCard__box__container {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    gap: 12px !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    align-content: flex-start !important;
+    padding: 16px !important;
+    width: fit-content !important;
+    max-width: fit-content !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    height: auto !important;
+    min-height: calc(100vh - 120px) !important;
+    position: relative !important;
+}
+
+/* Make the course card boxes use full width */
+.better-canvas-bloat-hidden .ic-DashboardCard__box {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Make the main content area use full width when sidebar is hidden */
+.better-canvas-bloat-hidden #content,
+.better-canvas-bloat-hidden .ic-Layout-contentMain,
+.better-canvas-bloat-hidden .ic-app-main-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+    overflow: hidden !important;
+    height: 100vh !important;
+    box-sizing: border-box !important;
+}
+
+/* Prevent all scrolling when bloat is hidden */
+.better-canvas-bloat-hidden body,
+.better-canvas-bloat-hidden html,
+.better-canvas-bloat-hidden #wrapper,
+.better-canvas-bloat-hidden .ic-Layout-wrapper,
+.better-canvas-bloat-hidden #main,
+.better-canvas-bloat-hidden .ic-Layout-columns,
+.better-canvas-bloat-hidden #dashboard,
+.better-canvas-bloat-hidden .ic-dashboard-app,
+.better-canvas-bloat-hidden #DashboardCard_Container,
+.better-canvas-bloat-hidden .ic-app,
+.better-canvas-bloat-hidden .ic-app-main-content,
+.better-canvas-bloat-hidden .ic-Layout-contentMain,
+.better-canvas-bloat-hidden #content {
+    overflow: hidden !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+/* NUCLEAR OPTION - Force no scrolling on everything when bloat is hidden */
+.better-canvas-bloat-hidden * {
+    overflow: hidden !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+}
+
+/* Force the layout wrapper to use full width */
+.better-canvas-bloat-hidden #wrapper,
+.better-canvas-bloat-hidden .ic-Layout-wrapper,
+.better-canvas-bloat-hidden #main,
+.better-canvas-bloat-hidden .ic-Layout-columns {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+/* Make the dashboard container use full width */
+.better-canvas-bloat-hidden #dashboard,
+.better-canvas-bloat-hidden .ic-dashboard-app,
+.better-canvas-bloat-hidden #DashboardCard_Container {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+/* Hide the right sidebar completely in bloat mode */
+.better-canvas-bloat-hidden #right-side-wrapper,
+.better-canvas-bloat-hidden #right-side {
+    display: none !important;
+}
+
+/* Hide the three-dot menu button */
+.better-canvas-bloat-hidden .ic-DashboardCard__header-button,
+.better-canvas-bloat-hidden .Button--icon-action-rev {
+    display: none !important;
+}
+
+/* Vertical stack layout - no responsive breakpoints needed */
+
+.better-canvas-bloat-hidden .ic-app-main-content__secondary {
+    display: none !important;
+}
+
+.better-canvas-bloat-hidden #right-side-wrapper {
+    display: none !important;
+}
+
+.better-canvas-bloat-hidden .ic-DashboardCard__box__header {
+    display: none !important;
+}
+
+/* Fullscreen Mode Styles */
+.better-canvas-fullscreen {
+    overflow: hidden !important;
+}
+
+.better-canvas-fullscreen .ic-app-header,
+.better-canvas-fullscreen .ic-app-header__main-navigation,
+.better-canvas-fullscreen .ic-app-header__secondary-navigation,
+.better-canvas-fullscreen #left-side,
+.better-canvas-fullscreen .ic-app-main-content__secondary,
+.better-canvas-fullscreen #right-side-wrapper,
+.better-canvas-fullscreen .ic-app-footer,
+.better-canvas-fullscreen .ic-sidebar-logo,
+.better-canvas-fullscreen .ic-DashboardCard__box__header {
+    display: none !important;
+}
+
+.better-canvas-fullscreen .ic-app-main-content {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 1000 !important;
+}
+
+.better-canvas-fullscreen .ic-app-main-content__primary {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.better-canvas-fullscreen iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+}
+
+.better-canvas-fullscreen .file-preview,
+.better-canvas-fullscreen .file-viewer,
+.better-canvas-fullscreen .document-viewer {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Fullscreen Button Styles */
+#better-canvas-fullscreen-btn {
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    z-index: 1000 !important;
+    background: rgba(0, 0, 0, 0.7) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 8px 12px !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+    transition: background 0.3s !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+#better-canvas-fullscreen-btn:hover {
+    background: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .better-canvas-bloat-hidden .ic-app-header__menu-list-item {
+        display: none !important;
+    }
+    
+    .better-canvas-bloat-hidden .ic-app-header__menu-list-item:first-child {
+        display: block !important; /* Keep profile */
+    }
+    
+    .better-canvas-bloat-hidden .ic-app-header__menu-list-item:nth-child(2) {
+        display: block !important; /* Keep dashboard */
+    }
+}
+
+/* Additional specific selectors for better coverage */
+.better-canvas-dark .ic-DashboardCard__box__container .ic-DashboardCard {
+    background-color: transparent !important;
+    border: 1px solid #404040 !important;
+}
+
+.better-canvas-dark .ic-DashboardCard__box__container .ic-DashboardCard * {
+    color: #e0e0e0 !important;
+}
+
+/* Force course card backgrounds - MORE AGGRESSIVE */
+.better-canvas-dark .ic-DashboardCard__box__container .ic-DashboardCard,
+.better-canvas-dark .ic-DashboardCard__box__container .ic-DashboardCard__header,
+.better-canvas-dark .ic-DashboardCard__box__container .ic-DashboardCard__content,
+.better-canvas-dark .ic-DashboardCard__box__container .ic-DashboardCard__header__name,
+.better-canvas-dark .ic-DashboardCard__box__container .ic-DashboardCard__header__subtitle {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+}
+
+/* Target specific Canvas elements that might be missed */
+.better-canvas-dark [class*="DashboardCard"] {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark [class*="DashboardCard"] * {
+    color: #e0e0e0 !important;
+}
+
+/* Force ALL course card elements to be dark */
+.better-canvas-dark .ic-DashboardCard,
+.better-canvas-dark .ic-DashboardCard__header,
+.better-canvas-dark .ic-DashboardCard__content,
+.better-canvas-dark .ic-DashboardCard__header__name,
+.better-canvas-dark .ic-DashboardCard__header__subtitle,
+.better-canvas-dark .ic-DashboardCard__content__title,
+.better-canvas-dark .ic-DashboardCard__content__subtitle {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+}
+
+/* Override any white backgrounds on course cards */
+.better-canvas-dark .ic-DashboardCard[style*="background"],
+.better-canvas-dark .ic-DashboardCard__header[style*="background"],
+.better-canvas-dark .ic-DashboardCard__content[style*="background"] {
+    background-color: transparent !important;
+}
+
+/* To Do list specific targeting */
+.better-canvas-dark [class*="todo"],
+.better-canvas-dark [class*="Todo"],
+.better-canvas-dark [class*="TO_DO"] {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark [class*="todo"] *,
+.better-canvas-dark [class*="Todo"] *,
+.better-canvas-dark [class*="TO_DO"] * {
+    color: #e0e0e0 !important;
+}
+
+/* Dismiss buttons - more specific targeting */
+.better-canvas-dark button[title*="dismiss"],
+.better-canvas-dark button[aria-label*="dismiss"],
+.better-canvas-dark .dismiss,
+.better-canvas-dark [class*="dismiss"],
+.better-canvas-dark button[class*="close"],
+.better-canvas-dark button[class*="remove"],
+.better-canvas-dark .ic-app-main-content__secondary button,
+.better-canvas-dark .ic-app-main-content__secondary .Button {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+/* Force ALL buttons in sidebar to be dark */
+.better-canvas-dark .ic-app-main-content__secondary button,
+.better-canvas-dark .ic-app-main-content__secondary .Button,
+.better-canvas-dark .ic-app-main-content__secondary [role="button"] {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+/* Override any white backgrounds on buttons */
+.better-canvas-dark button[style*="background"],
+.better-canvas-dark .Button[style*="background"] {
+    background-color: #404040 !important;
+}
+
+/* Floating buttons - more specific targeting */
+.better-canvas-dark [class*="floating"],
+.better-canvas-dark [class*="Floating"],
+.better-canvas-dark .Button[class*="icon"] {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+/* NUCLEAR OPTION - Force override ALL white backgrounds */
+.better-canvas-dark * {
+    background-color: inherit !important;
+}
+
+/* SUPER NUCLEAR - Force ALL white backgrounds to be dark */
+.better-canvas-dark *[style*="background-color: white"],
+.better-canvas-dark *[style*="background-color: #fff"],
+.better-canvas-dark *[style*="background-color: #ffffff"],
+.better-canvas-dark *[style*="background: white"],
+.better-canvas-dark *[style*="background: #fff"],
+.better-canvas-dark *[style*="background: #ffffff"],
+.better-canvas-dark *[style*="background-color: rgb(255, 255, 255)"],
+.better-canvas-dark *[style*="background: rgb(255, 255, 255)"] {
+    background-color: #2d2d2d !important;
+}
+
+/* Force ALL buttons to be dark - no exceptions */
+.better-canvas-dark button,
+.better-canvas-dark .Button,
+.better-canvas-dark [role="button"],
+.better-canvas-dark input[type="button"],
+.better-canvas-dark input[type="submit"] {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+.better-canvas-dark *[style*="background-color: white"],
+.better-canvas-dark *[style*="background-color: #fff"],
+.better-canvas-dark *[style*="background-color: #ffffff"],
+.better-canvas-dark *[style*="background: white"],
+.better-canvas-dark *[style*="background: #fff"],
+.better-canvas-dark *[style*="background: #ffffff"] {
+    background-color: #2d2d2d !important;
+}
+
+/* Force course cards to be dark regardless of inline styles */
+.better-canvas-dark .ic-DashboardCard,
+.better-canvas-dark .ic-DashboardCard * {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+}
+
+/* Force buttons to be dark regardless of inline styles */
+.better-canvas-dark button,
+.better-canvas-dark .Button,
+.better-canvas-dark [role="button"] {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+/* Force sidebar content to be dark */
+.better-canvas-dark .ic-app-main-content__secondary,
+.better-canvas-dark .ic-app-main-content__secondary * {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* SPECIFICALLY TARGET THOSE WHITE X BUTTONS */
+.better-canvas-dark .ic-app-main-content__secondary button[aria-label*="dismiss"],
+.better-canvas-dark .ic-app-main-content__secondary button[title*="dismiss"],
+.better-canvas-dark .ic-app-main-content__secondary button[class*="dismiss"],
+.better-canvas-dark .ic-app-main-content__secondary button[class*="close"],
+.better-canvas-dark .ic-app-main-content__secondary button[class*="remove"],
+.better-canvas-dark .ic-app-main-content__secondary button[class*="delete"],
+.better-canvas-dark .ic-app-main-content__secondary .Button[aria-label*="dismiss"],
+.better-canvas-dark .ic-app-main-content__secondary .Button[title*="dismiss"],
+.better-canvas-dark .ic-app-main-content__secondary .Button[class*="dismiss"],
+.better-canvas-dark .ic-app-main-content__secondary .Button[class*="close"],
+.better-canvas-dark .ic-app-main-content__secondary .Button[class*="remove"],
+.better-canvas-dark .ic-app-main-content__secondary .Button[class*="delete"] {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+/* Target any button with an X or close icon */
+.better-canvas-dark .ic-app-main-content__secondary button:has(svg),
+.better-canvas-dark .ic-app-main-content__secondary .Button:has(svg),
+.better-canvas-dark .ic-app-main-content__secondary button[aria-label*="×"],
+.better-canvas-dark .ic-app-main-content__secondary button[title*="×"],
+.better-canvas-dark .ic-app-main-content__secondary button[aria-label*="✕"],
+.better-canvas-dark .ic-app-main-content__secondary button[title*="✕"] {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+/* Force override ANY white background in the sidebar */
+.better-canvas-dark .ic-app-main-content__secondary *[style*="background-color: white"],
+.better-canvas-dark .ic-app-main-content__secondary *[style*="background-color: #fff"],
+.better-canvas-dark .ic-app-main-content__secondary *[style*="background-color: #ffffff"],
+.better-canvas-dark .ic-app-main-content__secondary *[style*="background: white"],
+.better-canvas-dark .ic-app-main-content__secondary *[style*="background: #fff"],
+.better-canvas-dark .ic-app-main-content__secondary *[style*="background: #ffffff"] {
+    background-color: #2d2d2d !important;
+}
+
+/* Target the specific white strip/container around the X buttons */
+.better-canvas-dark .ic-app-main-content__secondary .list-item,
+.better-canvas-dark .ic-app-main-content__secondary .todo-item,
+.better-canvas-dark .ic-app-main-content__secondary .item,
+.better-canvas-dark .ic-app-main-content__secondary [class*="item"],
+.better-canvas-dark .ic-app-main-content__secondary [class*="list"] {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* SPECIFIC TARGETING FOR THE TODO-DETAILS CLASSES */
+.better-canvas-dark .todo-details {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .todo-details__title {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* HIDE THE COURSE NUMBERS - USER DOESN'T WANT TO SEE THEM */
+.better-canvas-dark .todo-details__context {
+    display: none !important;
+}
+
+.better-canvas-dark .todo-details p {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .todo-details * {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* Target the parent container of todo-details */
+.better-canvas-dark [class*="todo-details"],
+.better-canvas-dark .todo-details,
+.better-canvas-dark .todo-details__title,
+.better-canvas-dark .todo-details__context {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* TARGET CSS PSEUDO-ELEMENTS (::after and ::before) */
+.better-canvas-dark .todo-details::after,
+.better-canvas-dark .todo-details::before,
+.better-canvas-dark .todo-details__title::after,
+.better-canvas-dark .todo-details__title::before,
+.better-canvas-dark .todo-details__context::after,
+.better-canvas-dark .todo-details__context::before,
+.better-canvas-dark .todo-details p::after,
+.better-canvas-dark .todo-details p::before {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* Target ALL pseudo-elements in the sidebar */
+.better-canvas-dark .ic-app-main-content__secondary *::after,
+.better-canvas-dark .ic-app-main-content__secondary *::before {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* Target pseudo-elements on buttons specifically */
+.better-canvas-dark .ic-app-main-content__secondary button::after,
+.better-canvas-dark .ic-app-main-content__secondary button::before,
+.better-canvas-dark .ic-app-main-content__secondary .Button::after,
+.better-canvas-dark .ic-app-main-content__secondary .Button::before {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Universal pseudo-element targeting */
+.better-canvas-dark *::after,
+.better-canvas-dark *::before {
+    background-color: inherit !important;
+    color: inherit !important;
+}
+
+/* NUCLEAR OPTION FOR PSEUDO-ELEMENTS - FORCE OVERRIDE EVERYTHING */
+.better-canvas-dark *::after {
+    background-color: #2d2d2d !important;
+    background: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark *::before {
+    background-color: #2d2d2d !important;
+    background: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* SPECIFICALLY TARGET THE WHITE STRIP PSEUDO-ELEMENT */
+.better-canvas-dark .todo-details::after,
+.better-canvas-dark .todo-details__title::after,
+.better-canvas-dark .todo-details__context::after,
+.better-canvas-dark .todo-details p::after {
+    background-color: #2d2d2d !important;
+    background: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    display: none !important; /* If it's still white, just hide it completely */
+}
+
+/* Force ALL pseudo-elements in sidebar to be dark or hidden */
+.better-canvas-dark .ic-app-main-content__secondary *::after {
+    background-color: #2d2d2d !important;
+    background: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* If pseudo-elements are still causing issues, hide them completely */
+.better-canvas-dark .ic-app-main-content__secondary *::after {
+    display: none !important;
+}
+
+/* COURSE PAGE SPECIFIC FIXES */
+
+/* Honorlock Modal/Dialog */
+.better-canvas-dark .sc-ciFqri,
+.better-canvas-dark [role="dialog"],
+.better-canvas-dark [aria-label*="Honorlock"],
+.better-canvas-dark [aria-label*="Instructors Using Honorlock"] {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+.better-canvas-dark .sc-ciFqri *,
+.better-canvas-dark [role="dialog"] *,
+.better-canvas-dark [aria-label*="Honorlock"] * {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* Course page buttons */
+.better-canvas-dark .btn,
+.better-canvas-dark .button-sidebar-wide,
+.better-canvas-dark .course-options .btn,
+.better-canvas-dark .course-options .button-sidebar-wide {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+.better-canvas-dark .btn:hover,
+.better-canvas-dark .button-sidebar-wide:hover {
+    background-color: #555555 !important;
+}
+
+/* Course title and header */
+.better-canvas-dark .course-title,
+.better-canvas-dark .header-bar,
+.better-canvas-dark .page-toolbar {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* Course navigation menu */
+.better-canvas-dark .ic-app-course-menu,
+.better-canvas-dark #left-side {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ic-app-course-menu a,
+.better-canvas-dark #section-tabs a {
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ic-app-course-menu a:hover,
+.better-canvas-dark #section-tabs a:hover {
+    background-color: #404040 !important;
+    color: #ffffff !important;
+}
+
+.better-canvas-dark .ic-app-course-menu a.active,
+.better-canvas-dark #section-tabs a.active {
+    background-color: #404040 !important;
+    color: #ffffff !important;
+}
+
+/* Fix course navigation highlighting */
+.better-canvas-dark .ic-app-course-menu a,
+.better-canvas-dark #section-tabs a {
+    background-color: transparent !important;
+}
+
+.better-canvas-dark .ic-app-course-menu a:hover,
+.better-canvas-dark #section-tabs a:hover {
+    background-color: #404040 !important;
+    color: #ffffff !important;
+}
+
+/* Remove any green colors from course navigation */
+.better-canvas-dark .ic-app-course-menu a[style*="color: green"],
+.better-canvas-dark .ic-app-course-menu a[style*="color: #"],
+.better-canvas-dark #section-tabs a[style*="color: green"],
+.better-canvas-dark #section-tabs a[style*="color: #"] {
+    color: #ffffff !important;
+}
+
+/* Course content area */
+.better-canvas-dark .course-content,
+.better-canvas-dark .course-home {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Course page images and content */
+.better-canvas-dark .course-content img,
+.better-canvas-dark .course-home img {
+    filter: brightness(0.8) !important;
+}
+
+/* Course page text content */
+.better-canvas-dark .course-content h1,
+.better-canvas-dark .course-content h2,
+.better-canvas-dark .course-content h3,
+.better-canvas-dark .course-content p,
+.better-canvas-dark .course-home h1,
+.better-canvas-dark .course-home h2,
+.better-canvas-dark .course-home h3,
+.better-canvas-dark .course-home p {
+    color: #e0e0e0 !important;
+}
+
+/* Course page links */
+.better-canvas-dark .course-content a,
+.better-canvas-dark .course-home a {
+    color: #4a90e2 !important;
+}
+
+.better-canvas-dark .course-content a:hover,
+.better-canvas-dark .course-home a:hover {
+    color: #6bb6ff !important;
+}
+
+/* UI Dialog elements */
+.better-canvas-dark .ui-dialog,
+.better-canvas-dark .ui-widget,
+.better-canvas-dark .ui-widget-content {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+.better-canvas-dark .ui-dialog-titlebar,
+.better-canvas-dark .ui-widget-header {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ui-dialog-content {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.better-canvas-dark .ui-button,
+.better-canvas-dark .ui-widget .ui-button {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+.better-canvas-dark .ui-button:hover {
+    background-color: #555555 !important;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .better-canvas-dark {
+        --ic-brand-primary: #ffffff !important;
+        --ic-brand-button--primary-bgd: #ffffff !important;
+        --ic-brand-button--primary-text: #000000 !important;
+    }
+    
+    .better-canvas-dark .ic-app {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+    
+    .better-canvas-dark .ic-DashboardCard {
+        border: 2px solid #ffffff !important;
+    }
+}
