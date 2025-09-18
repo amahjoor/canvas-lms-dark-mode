@@ -179,6 +179,45 @@
     color: var(--bc-dark-text) !important;
 }
 
+/* Fix card text and background highlights */
+.better-canvas-dark .ic-DashboardCard__header-title,
+.better-canvas-dark .ic-DashboardCard__header-subtitle,
+.better-canvas-dark .ic-DashboardCard__header-term {
+    color: var(--bc-dark-text) !important;
+    background-color: transparent !important;
+}
+
+.better-canvas-dark .ic-DashboardCard__header-title span {
+    color: var(--bc-dark-text) !important;
+    background-color: transparent !important;
+}
+
+/* Remove card header hero overlay and button backgrounds */
+.better-canvas-dark .ic-DashboardCard__header_hero {
+    background-color: transparent !important;
+    opacity: 0 !important;
+}
+
+.better-canvas-dark .ic-DashboardCard__header-button-bg {
+    background-color: transparent !important;
+    opacity: 0 !important;
+}
+
+/* Card header content area */
+.better-canvas-dark .ic-DashboardCard__header_content {
+    background-color: transparent !important;
+}
+
+/* Card actions */
+.better-canvas-dark .ic-DashboardCard__action {
+    color: var(--bc-dark-text) !important;
+    background-color: transparent !important;
+}
+
+.better-canvas-dark .ic-DashboardCard__action:hover {
+    background-color: var(--bc-dark-hover) !important;
+}
+
 /* Forms and Inputs */
 .better-canvas-dark input[type="text"],
 .better-canvas-dark input[type="email"],
@@ -404,6 +443,60 @@
     color: var(--bc-dark-text) !important;
 }
 
+/* Universal Link Styling for Dark Mode */
+.better-canvas-dark a,
+.better-canvas-dark a:link,
+.better-canvas-dark a:visited {
+    color: var(--bc-primary-color) !important;
+    text-decoration: underline !important;
+}
+
+.better-canvas-dark a:hover,
+.better-canvas-dark a:focus {
+    color: var(--bc-primary-hover) !important;
+    text-decoration: underline !important;
+}
+
+/* Assignment page links */
+.better-canvas-dark .assignment-content a,
+.better-canvas-dark .submission-details a,
+.better-canvas-dark .assignment-details a {
+    color: var(--bc-primary-color) !important;
+}
+
+.better-canvas-dark .assignment-content a:hover,
+.better-canvas-dark .submission-details a:hover,
+.better-canvas-dark .assignment-details a:hover {
+    color: var(--bc-primary-hover) !important;
+}
+
+/* File download links */
+.better-canvas-dark a[href*=".pdf"],
+.better-canvas-dark a[href*=".doc"],
+.better-canvas-dark a[href*=".docx"],
+.better-canvas-dark a[href*="download"] {
+    color: var(--bc-primary-color) !important;
+    text-decoration: underline !important;
+}
+
+.better-canvas-dark a[href*=".pdf"]:hover,
+.better-canvas-dark a[href*=".doc"]:hover,
+.better-canvas-dark a[href*=".docx"]:hover,
+.better-canvas-dark a[href*="download"]:hover {
+    color: var(--bc-primary-hover) !important;
+}
+
+/* Main content area links */
+.better-canvas-dark .ic-app-main-content a,
+.better-canvas-dark #content a {
+    color: var(--bc-primary-color) !important;
+}
+
+.better-canvas-dark .ic-app-main-content a:hover,
+.better-canvas-dark #content a:hover {
+    color: var(--bc-primary-hover) !important;
+}
+
 /* Any remaining header containers */
 .better-canvas-dark [class*="header"],
 .better-canvas-dark [id*="header"] {
@@ -417,6 +510,402 @@
 .better-canvas-dark #content *[style*="background-color: #f"],
 .better-canvas-dark #content *[style*="background: #f"] {
     background-color: var(--bc-dark-bg) !important;
+}
+
+/* Courses Sidebar (Tray) Dark Mode */
+.better-canvas-dark .navigation-tray-container,
+.better-canvas-dark .courses-tray,
+.better-canvas-dark .css-1kdtqv3-tray__content {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+}
+
+.better-canvas-dark .tray-with-space-for-global-nav {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+}
+
+/* Courses Sidebar Headings */
+.better-canvas-dark .courses-tray h2,
+.better-canvas-dark .courses-tray h3,
+.better-canvas-dark .courses-tray .css-av78pf-view-heading,
+.better-canvas-dark .courses-tray .css-eowqma-view-heading {
+    color: var(--bc-dark-text) !important;
+    background-color: transparent !important;
+}
+
+/* Courses Sidebar Links */
+.better-canvas-dark .courses-tray a,
+.better-canvas-dark .courses-tray .css-11agmgm-view-link {
+    color: var(--bc-primary-color) !important;
+    background-color: transparent !important;
+}
+
+.better-canvas-dark .courses-tray a:hover,
+.better-canvas-dark .courses-tray .css-11agmgm-view-link:hover {
+    color: var(--bc-primary-hover) !important;
+    background-color: var(--bc-dark-hover) !important;
+}
+
+/* Courses Sidebar Text */
+.better-canvas-dark .courses-tray .css-1jyml41-text,
+.better-canvas-dark .courses-tray .css-8bodfv-text {
+    color: var(--bc-dark-text) !important;
+    background-color: transparent !important;
+}
+
+/* Courses Sidebar List Items */
+.better-canvas-dark .courses-tray li,
+.better-canvas-dark .courses-tray .css-1xyr7cq-view-listItem {
+    background-color: transparent !important;
+    border-color: var(--bc-dark-border) !important;
+}
+
+/* Courses Sidebar Lists */
+.better-canvas-dark .courses-tray ul,
+.better-canvas-dark .courses-tray .css-1if75zb-view--block-list {
+    background-color: transparent !important;
+}
+
+/* Courses Sidebar Close Button */
+.better-canvas-dark .courses-tray .css-zvg8k4-closeButton button,
+.better-canvas-dark .courses-tray .css-16epeo5-view--inlineBlock-baseButton {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+    border: 1px solid var(--bc-dark-border) !important;
+}
+
+.better-canvas-dark .courses-tray .css-zvg8k4-closeButton button:hover {
+    background-color: var(--bc-dark-hover) !important;
+}
+
+/* Courses Sidebar SVG Icons */
+.better-canvas-dark .courses-tray svg {
+    color: var(--bc-dark-text) !important;
+    fill: var(--bc-dark-text) !important;
+}
+
+/* Courses Sidebar HR Elements */
+.better-canvas-dark .courses-tray hr {
+    border-color: var(--bc-dark-border) !important;
+    background-color: var(--bc-dark-border) !important;
+}
+
+/* Account Sidebar (Profile Tray) Dark Mode */
+.better-canvas-dark .profile-tray,
+.better-canvas-dark .profile-tray-table,
+.better-canvas-dark .navigation-tray-container.profile-tray {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+}
+
+/* Account Sidebar Content */
+.better-canvas-dark .profile-tray .tray-with-space-for-global-nav,
+.better-canvas-dark .profile-tray .profile-details {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+}
+
+/* Account Sidebar Links and Menu Items */
+.better-canvas-dark .profile-tray a,
+.better-canvas-dark .profile-tray .profile-link,
+.better-canvas-dark .profile-tray .Button,
+.better-canvas-dark .profile-tray button {
+    color: var(--bc-dark-text) !important;
+    background-color: transparent !important;
+    border-color: var(--bc-dark-border) !important;
+}
+
+.better-canvas-dark .profile-tray a:hover,
+.better-canvas-dark .profile-tray .profile-link:hover,
+.better-canvas-dark .profile-tray .Button:hover,
+.better-canvas-dark .profile-tray button:hover {
+    background-color: var(--bc-dark-hover) !important;
+    color: var(--bc-dark-text) !important;
+}
+
+/* Account Sidebar User Name and Info */
+.better-canvas-dark .profile-tray .profile-link-name,
+.better-canvas-dark .profile-tray .profile-details h2,
+.better-canvas-dark .profile-tray .profile-details h3,
+.better-canvas-dark .profile-tray .user-name {
+    color: var(--bc-dark-text) !important;
+    background-color: transparent !important;
+}
+
+/* Universal Sidebar Dark Mode (catch-all for any sidebar) */
+.better-canvas-dark .navigation-tray-container,
+.better-canvas-dark [class*="-tray"] {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+}
+
+.better-canvas-dark .navigation-tray-container *,
+.better-canvas-dark [class*="-tray"] * {
+    color: var(--bc-dark-text) !important;
+}
+
+.better-canvas-dark .navigation-tray-container a,
+.better-canvas-dark [class*="-tray"] a {
+    color: var(--bc-primary-color) !important;
+}
+
+.better-canvas-dark .navigation-tray-container a:hover,
+.better-canvas-dark [class*="-tray"] a:hover {
+    color: var(--bc-primary-hover) !important;
+    background-color: var(--bc-dark-hover) !important;
+}
+
+/* Sidebar Headers and Titles */
+.better-canvas-dark .navigation-tray-container h1,
+.better-canvas-dark .navigation-tray-container h2,
+.better-canvas-dark .navigation-tray-container h3,
+.better-canvas-dark [class*="-tray"] h1,
+.better-canvas-dark [class*="-tray"] h2,
+.better-canvas-dark [class*="-tray"] h3 {
+    color: var(--bc-dark-text) !important;
+    background-color: transparent !important;
+}
+
+/* Sidebar Buttons */
+.better-canvas-dark .navigation-tray-container button,
+.better-canvas-dark [class*="-tray"] button,
+.better-canvas-dark .navigation-tray-container .Button,
+.better-canvas-dark [class*="-tray"] .Button {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+    border: 1px solid var(--bc-dark-border) !important;
+}
+
+.better-canvas-dark .navigation-tray-container button:hover,
+.better-canvas-dark [class*="-tray"] button:hover,
+.better-canvas-dark .navigation-tray-container .Button:hover,
+.better-canvas-dark [class*="-tray"] .Button:hover {
+    background-color: var(--bc-dark-hover) !important;
+}
+
+/* Assignment Pages Dark Mode */
+.better-canvas-dark .assignment-title,
+.better-canvas-dark .assignment-header,
+.better-canvas-dark .assignment-description,
+.better-canvas-dark .assignment-details {
+    background-color: transparent !important;
+    color: var(--bc-dark-text) !important;
+}
+
+/* Assignment Content Areas */
+.better-canvas-dark .assignment-content-wrapper,
+.better-canvas-dark .assignment-main-content,
+.better-canvas-dark .submission-details,
+.better-canvas-dark .submission-workflow {
+    background-color: var(--bc-dark-bg) !important;
+    color: var(--bc-dark-text) !important;
+}
+
+/* File Upload Areas */
+.better-canvas-dark .file-upload-area,
+.better-canvas-dark .upload-dropzone,
+.better-canvas-dark .file-drop-area,
+.better-canvas-dark [class*="upload"],
+.better-canvas-dark [class*="dropzone"],
+.better-canvas-dark [class*="file-drop"] {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+    border: 2px dashed var(--bc-dark-border) !important;
+}
+
+.better-canvas-dark .file-upload-area:hover,
+.better-canvas-dark .upload-dropzone:hover,
+.better-canvas-dark .file-drop-area:hover {
+    background-color: var(--bc-dark-hover) !important;
+    border-color: var(--bc-primary-color) !important;
+}
+
+/* Specific File Upload Container Styling */
+.better-canvas-dark [data-testid="upload-pane"],
+.better-canvas-dark #file-upload-container {
+    background-color: var(--bc-dark-surface) !important;
+    border-color: var(--bc-dark-border) !important;
+}
+
+.better-canvas-dark [data-testid="upload-box"] {
+    background-color: var(--bc-dark-surface) !important;
+}
+
+/* File Drop Label and Content */
+.better-canvas-dark .css-1kwfrgm-fileDrop__label,
+.better-canvas-dark .css-8xpz59-fileDrop__labelContent,
+.better-canvas-dark .css-or986r-fileDrop__layout,
+.better-canvas-dark .css-ptowqo-view--block,
+.better-canvas-dark .css-15ns9qg-view,
+.better-canvas-dark .css-1q3xq2s-view {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+}
+
+/* Upload Instructions Text */
+.better-canvas-dark .css-vbj8ba-text,
+.better-canvas-dark .css-1m0yqez-text {
+    color: var(--bc-dark-text) !important;
+}
+
+/* Drag Drop Area Specific Elements */
+.better-canvas-dark .css-16iirej-view--flex-flex,
+.better-canvas-dark .css-lie737-view--flex-flex,
+.better-canvas-dark .css-15otsec-view-flexItem,
+.better-canvas-dark .css-535bio-view-flexItem,
+.better-canvas-dark .css-1qyuf2e-view-flexItem {
+    background-color: transparent !important;
+    color: var(--bc-dark-text) !important;
+}
+
+/* All text elements within the drag area */
+.better-canvas-dark [data-testid="upload-box"] span,
+.better-canvas-dark [data-testid="upload-box"] div,
+.better-canvas-dark .css-1kwfrgm-fileDrop__label span,
+.better-canvas-dark .css-1kwfrgm-fileDrop__label div {
+    color: var(--bc-dark-text) !important;
+    background-color: transparent !important;
+}
+
+/* File permitted text */
+.better-canvas-dark .css-15otsec-view-flexItem:last-child {
+    color: var(--bc-dark-text) !important;
+}
+
+/* Aggressive override for any remaining white backgrounds */
+.better-canvas-dark [data-testid="upload-box"] *,
+.better-canvas-dark .css-1kwfrgm-fileDrop__label *,
+.better-canvas-dark .css-8xpz59-fileDrop__labelContent * {
+    background-color: transparent !important;
+}
+
+/* Ensure drag area border is visible */
+.better-canvas-dark .css-1kwfrgm-fileDrop__label {
+    border: 2px dashed var(--bc-dark-border) !important;
+}
+
+.better-canvas-dark .css-1kwfrgm-fileDrop__label:hover {
+    background-color: var(--bc-dark-hover) !important;
+    border-color: var(--bc-primary-color) !important;
+}
+
+/* Canvas Files Button */
+.better-canvas-dark .css-upnkjq-view--block-baseButton,
+.better-canvas-dark .css-1owcc66-view button {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+    border: 1px solid var(--bc-dark-border) !important;
+}
+
+.better-canvas-dark .css-upnkjq-view--block-baseButton:hover {
+    background-color: var(--bc-dark-hover) !important;
+}
+
+/* Upload Area Divider */
+.better-canvas-dark [style*="background-color: rgb(242, 244, 244)"] {
+    background-color: var(--bc-dark-surface) !important;
+}
+
+.better-canvas-dark [style*="background-color: rgb(106, 120, 131)"] {
+    background-color: var(--bc-dark-border) !important;
+}
+
+/* Override any inline light backgrounds in upload area */
+.better-canvas-dark [data-testid="upload-pane"] *[style*="background-color: rgb(242, 244, 244)"] {
+    background-color: var(--bc-dark-surface) !important;
+}
+
+.better-canvas-dark [data-testid="upload-pane"] *[style*="background-color: rgb(106, 120, 131)"] {
+    background-color: var(--bc-dark-border) !important;
+}
+
+/* Submission Type Buttons */
+.better-canvas-dark .submission-type-button,
+.better-canvas-dark .upload-button,
+.better-canvas-dark [aria-label*="Upload"],
+.better-canvas-dark [class*="submission-type"] {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+    border: 1px solid var(--bc-dark-border) !important;
+}
+
+.better-canvas-dark .submission-type-button:hover,
+.better-canvas-dark .upload-button:hover {
+    background-color: var(--bc-dark-hover) !important;
+}
+
+/* Assignment Attempt Selector */
+.better-canvas-dark .attempt-selector,
+.better-canvas-dark select[class*="attempt"] {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+    border: 1px solid var(--bc-dark-border) !important;
+}
+
+/* Assignment Status Indicators */
+.better-canvas-dark .assignment-status,
+.better-canvas-dark .submission-status,
+.better-canvas-dark .due-date-info,
+.better-canvas-dark .points-info {
+    background-color: transparent !important;
+    color: var(--bc-dark-text) !important;
+}
+
+/* Assignment Forms and Inputs */
+.better-canvas-dark .assignment-form,
+.better-canvas-dark .submission-form {
+    background-color: var(--bc-dark-bg) !important;
+    color: var(--bc-dark-text) !important;
+}
+
+.better-canvas-dark .assignment-form input,
+.better-canvas-dark .assignment-form textarea,
+.better-canvas-dark .submission-form input,
+.better-canvas-dark .submission-form textarea {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+    border: 1px solid var(--bc-dark-border) !important;
+}
+
+/* Assignment Comments */
+.better-canvas-dark .assignment-comments,
+.better-canvas-dark .submission-comments,
+.better-canvas-dark .comment-area {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+    border: 1px solid var(--bc-dark-border) !important;
+}
+
+/* Assignment Rubric */
+.better-canvas-dark .rubric-container,
+.better-canvas-dark .rubric-table {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+}
+
+/* File Upload Instructions */
+.better-canvas-dark .upload-instructions,
+.better-canvas-dark .file-upload-instructions,
+.better-canvas-dark .drag-drop-instructions {
+    color: var(--bc-dark-text) !important;
+    background-color: transparent !important;
+}
+
+/* Assignment Panels and Cards */
+.better-canvas-dark .assignment-panel,
+.better-canvas-dark .submission-panel,
+.better-canvas-dark .assignment-card {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
+    border: 1px solid var(--bc-dark-border) !important;
+}
+
+/* Assignment Progress Indicators */
+.better-canvas-dark .progress-indicator,
+.better-canvas-dark .submission-progress {
+    background-color: var(--bc-dark-surface) !important;
+    color: var(--bc-dark-text) !important;
 }
 
 /* ========================================================================
