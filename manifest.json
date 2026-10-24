@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Better Canvas",
+  "name": "Canvas LMS Dark Mode",
   "version": "1.0.0",
-  "description": "Enhance Canvas LMS with dark mode, bloat removal, and fullscreen presentations. Clean interface, better UX.",
-  "author": "Better Canvas Team",
+  "description": "Dark theme, less sidebar clutter, and a fullscreen button for Canvas file viewers.",
+  "author": "amahjoor",
   
   "permissions": [
     "activeTab",
@@ -72,7 +72,7 @@
   
   "minimum_chrome_version": "88",
   
-  "homepage_url": "https://github.com/better-canvas/extension",
+  "homepage_url": "https://github.com/amahjoor/canvas-lms-dark-mode",
   
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self';"
